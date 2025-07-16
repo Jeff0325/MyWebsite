@@ -37,19 +37,26 @@ function App() {
       subtitle: "Movie App Web Base",
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
-      gradient: "linear-gradient(145deg, #3B82F6, #000)",
-      url: ""
-    },
-    {
-      image: "https://i.pravatar.cc/300?img=2",
-      title: "Curfew E-Pass Management System",
-      subtitle: "Digital curfew passes",
-      handle: "@JeffGermino",
-      borderColor: "#10B981",
-      gradient: "linear-gradient(180deg, #10B981, #000)",
+      gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
       url: ""
     }
   ];
+const galleryItems = [
+  { image: "/images/html.png", text: "HTML" },
+  { image: "/images/php.svg", text: "PHP" },
+  { image: "/images/js.png", text: "JavaScript" },
+  { image: "/images/asp.png", text: "ASP .Net" },
+  { image: "/images/c.png", text: "C#" },
+  { image: "/images/react.png", text: "React" },
+  { image: "/images/aw.jpg", text: "AWS" },
+  { image: "/images/azure.png", text: "Azure" },
+  { image: "/images/bb.jpg", text: "Bit Bucket" },
+  { image: "/images/mysql.png", text: "MySQL" },
+  { image: "/images/mssql.png", text: "MsSQL" },
+  { image: "/images/ps.png", text: "Photoshop" },
+  { image: "/images/figma.png", text: "Figma" },
+
+];
   return (
     <div>
       {/* Navigation Bar */}
@@ -186,12 +193,14 @@ function App() {
   </h2>
 
   <CircularGallery
+    items={galleryItems}
     bend={3}
     textColor="#ffffff"
     borderRadius={0.05}
     scrollEase={0.02}
   />
 </section>
+
 
 {/* Project Section */}
 <section
@@ -230,11 +239,9 @@ function App() {
     textAlign: "center",
   }}
 >
-  <h2 style={{ fontSize: "2rem", marginBottom: "2rem" }}>
-    <span style={{ borderBottom: "3px solid #00bfff", paddingBottom: "0.2rem" }}>
-      Experience
-    </span>
-  </h2>
+<h2 style={{ fontSize: "2rem", marginBottom: "2rem" }}>
+  Experience
+</h2>
 
   <div
     style={{
