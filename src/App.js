@@ -29,6 +29,24 @@ function App() {
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10B981, #000)",
       url: ""
+    },
+        {
+      image: "https://i.pravatar.cc/300?img=1",
+      title: "Moviety",
+      subtitle: "Movie App Web Base",
+      handle: "@JeffGermino",
+      borderColor: "#3B82F6",
+      gradient: "linear-gradient(145deg, #3B82F6, #000)",
+      url: ""
+    },
+    {
+      image: "https://i.pravatar.cc/300?img=2",
+      title: "Curfew E-Pass Management System",
+      subtitle: "Digital curfew passes",
+      handle: "@JeffGermino",
+      borderColor: "#10B981",
+      gradient: "linear-gradient(180deg, #10B981, #000)",
+      url: ""
     }
   ];
   return (
@@ -63,29 +81,134 @@ function App() {
            />
          </div>
       </section>
+{/* About Me Section */}
+<section
+  id="about-me"
+  style={{
+    padding: "4rem 1rem",
+    background: "linear-gradient(135deg, #0d0d0d, #1a1a1a)",
+    color: "#fff",
+    fontFamily: "monospace",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+  {/* Decorative Code Symbols */}
+  <div
+    style={{
+      position: "absolute",
+      top: "10%",
+      left: "5%",
+      fontSize: "6rem",
+      color: "rgba(255,255,255,0.02)",
+      userSelect: "none",
+      pointerEvents: "none",
+      zIndex: 0,
+    }}
+  >
+    &lt;/&gt;
+  </div>
+  <div
+    style={{
+      position: "absolute",
+      bottom: "10%",
+      right: "5%",
+      fontSize: "6rem",
+      color: "rgba(255,255,255,0.02)",
+      userSelect: "none",
+      pointerEvents: "none",
+      zIndex: 0,
+    }}
+  >
+    &lt;/&gt;
+  </div>
 
-      {/* Gallery Section */}
-        <section
-          id="gallery"
-          style={{
-            height: "80vh",
-            paddingTop: "60px",
-            backgroundColor: "#111",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-        <CircularGallery
-          bend={3}
-          textColor="#ffffff"
-          borderRadius={0.05}
-          scrollEase={0.02}
-        />
-      </section>
+<p
+  style={{
+    maxWidth: "800px",
+    lineHeight: "1.8",
+    fontSize: "1.1rem",
+    padding: "0 1rem",
+    marginBottom: "2rem",
+    marginRight: "5rem",
+    zIndex: 1,
+  }}
+>
+  <EncryptedText text="I'm a web developer skilled in C# .NET, MS SQL, Azure, and AWS, building secure, scalable cloud solutions. I specialize in deployment, WAF security, load balancing, and disaster recovery. With a passion for user-centered design using Figma and Photoshop, I combine technical expertise with creative vision to deliver seamless digital experiences." />
+</p>
 
-      {/* Project Section */}
-      <section id="project" style={{ height: '600px', position: 'relative' }}>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+      gap: "1.25rem",
+      maxWidth: "900px",
+      width: "100%",
+      textAlign: "left",
+      padding: "0 1rem",
+      zIndex: 1,
+    }}
+  >
+    <div><strong>Email:</strong> jeffersongermino0325@gmail.com</div>
+    <div><strong>Location:</strong> Mandaluyong, Philippines</div>
+    <div><strong>Age:</strong> 24</div>
+    <div><strong>Nationality:</strong> Filipino</div>
+    <div><strong>Education:</strong> Holy Cross College</div>
+    <div><strong>Degree:</strong> BS in Computer Science</div>
+    <div><strong>Experience:</strong> 2+ Years</div>
+    <div><strong>Projects:</strong> 5+ Completed</div>
+    <div><strong>Seminars:</strong> 10+ Attended</div>
+  </div>
+</section>
+
+
+{/* Gallery Section */}
+<section
+  id="gallery"
+  style={{
+    height: "80vh",
+    paddingTop: "60px",
+    backgroundColor: "#111",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    color: "#fff"
+  }}
+>
+  <h2 style={{ fontSize: "2rem", marginBottom: "1.5rem" }}>
+    Gallery
+  </h2>
+
+  <CircularGallery
+    bend={3}
+    textColor="#ffffff"
+    borderRadius={0.05}
+    scrollEase={0.02}
+  />
+</section>
+
+{/* Project Section */}
+<section
+  id="project"
+  style={{
+    minHeight: '100vh',
+    backgroundColor: '#111',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '2rem 1rem',
+    position: 'relative',
+  }}
+>
+  <h2 style={{ fontSize: '2rem', color: 'white', marginBottom: '1.5rem' }}>
+    Projects
+  </h2>
   <ChromaGrid 
     items={items}
     radius={300}
@@ -95,7 +218,7 @@ function App() {
   />
 </section>
 
-            {/* About Section */}
+    {/* About Section */}
       <section
         id="about"
         style={{
