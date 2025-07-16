@@ -9,6 +9,7 @@ import Profile from './components/Profile';
 import avatar from './assets/download.png';
 import EncryptedText from './components/EncryptedText';
 import ChromaGrid from './components/ChromaGrid';
+import Spotlight from './components/Spotlight';
 
 function App() {
     const items = [
@@ -218,23 +219,65 @@ function App() {
   />
 </section>
 
-    {/* About Section */}
-      <section
-        id="about"
-        style={{
-          padding: "4rem 2rem",
-          backgroundColor: "#222",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>About</h2>
-        <p style={{ maxWidth: "600px", margin: "0 auto", lineHeight: "1.6" }}>
-          This gallery is built using WebGL via OGL, integrated into a smooth,
-          infinite scrolling React experience. It’s designed to showcase images in
-          a dynamic and engaging way across all devices.
-        </p>
-      </section>
+{/* Experience Section (formerly About) */}
+<section
+  id="about"
+  style={{
+    padding: "4rem 2rem",
+    backgroundColor: "#222",
+    color: "white",
+    fontFamily: "monospace",
+    textAlign: "center",
+  }}
+>
+  <h2 style={{ fontSize: "2rem", marginBottom: "2rem" }}>
+    <span style={{ borderBottom: "3px solid #00bfff", paddingBottom: "0.2rem" }}>
+      Experience
+    </span>
+  </h2>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+      gap: "2rem",
+      maxWidth: "1000px",
+      margin: "0 auto",
+    }}
+  >
+    <Spotlight>
+      <h3 style={{ color: "#ff3860", fontSize: "1.2rem", marginBottom: "0.5rem" }}>
+        MIS Intern
+      </h3>
+      <p style={{ fontStyle: "italic", marginBottom: "1rem" }}>
+        Holy Cross College / 2022
+      </p>
+      <p style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+        Assisted in system installation, troubleshooting, database management,
+        and software development. Provided IT support, diagnosed technical
+        issues, maintained infrastructure, generated reports, and documented
+        system configurations to ensure smooth operations.
+      </p>
+    </Spotlight>
+
+    <Spotlight>
+      <h3 style={{ color: "#ff3860", fontSize: "1.2rem", marginBottom: "0.5rem" }}>
+        Web Developer
+      </h3>
+      <p style={{ fontStyle: "italic", marginBottom: "1rem" }}>
+        Jyosna Inc / 2022
+      </p>
+      <p style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+        Developed and maintained web applications using C#, ASP.NET, and MSSQL
+        while designing scalable cloud solutions on Azure. Managed cloud
+        infrastructure, including governance, load balancing, disaster recovery,
+        and security (WAF). Integrated third-party APIs, optimized database
+        performance, and implemented UI/UX improvements.
+      </p>
+    </Spotlight>
+  </div>
+</section>
+
 
       {/* Contact Section */}
 <section
