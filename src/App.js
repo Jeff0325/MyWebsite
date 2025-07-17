@@ -15,27 +15,27 @@ import { FaGithub, FaLinkedin, FaInstagram, FaDiscord } from 'react-icons/fa';
 function App() {
     const items = [
     {
-      image: "https://i.pravatar.cc/300?img=1",
-      title: "Moviety",
-      subtitle: "Movie App Web Base",
+      image: "/images/cpms.png",
+      title: "Curfew E-Pass MS",
+      subtitle: "Digital Curfew Passes",
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
       gradient: "linear-gradient(145deg, #3B82F6, #000)",
       url: ""
     },
     {
-      image: "https://i.pravatar.cc/300?img=2",
-      title: "Curfew E-Pass Management System",
-      subtitle: "Digital curfew passes",
+      image: "/images/moviety.png",
+      title: "Moviety",
+      subtitle: "Movie App Web Base",
       handle: "@JeffGermino",
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10B981, #000)",
       url: ""
     },
         {
-      image: "https://i.pravatar.cc/300?img=1",
-      title: "Moviety",
-      subtitle: "Movie App Web Base",
+      image: "/images/Qr.png",
+      title: "Wifi QR Generator",
+      subtitle: "Genrate Wifi Qr ",
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
       gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
