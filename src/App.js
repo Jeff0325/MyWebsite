@@ -10,6 +10,7 @@ import avatar from './assets/download.png';
 import EncryptedText from './components/EncryptedText';
 import ChromaGrid from './components/ChromaGrid';
 import Spotlight from './components/Spotlight';
+import { FaGithub, FaLinkedin, FaInstagram, FaDiscord } from 'react-icons/fa';
 
 function App() {
     const items = [
@@ -298,6 +299,10 @@ const galleryItems = [
 >
   <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Contact</h2>
 
+  <p style={{ maxWidth: "600px", margin: "0 auto 2rem", lineHeight: "1.6" }}>
+    I am actively exploring career opportunities. If you have a job opening, project collaboration, or require further information, please feel free to reach out.
+  </p>
+
   {/* Decrypted Email */}
   <EncryptedText
     text="jeffersongermino0325@gmail.com"
@@ -310,13 +315,20 @@ const galleryItems = [
     encryptedClassName="scrambled"
   />
 
-  {/* Decrypted Instagram */}
-  <div style={{ marginTop: '1rem' }}>
-    <EncryptedText
-      text="@jefferson.codes"
-      animateOn="view"
-      revealDirection="center"
-    />
+  {/* Social Icons */}
+  <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center", gap: "1.5rem", fontSize: "1.8rem" }}>
+    <a href="https://github.com/Jeff0325" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+      <FaGithub />
+    </a>
+    <a href="https://www.linkedin.com/in/jefferson-germino-a3999b246/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+      <FaLinkedin />
+    </a>
+    <a href="https://instagram.com/germinochon" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+      <FaInstagram />
+    </a>
+    <a href="https://discord.com/users/yourID" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+      <FaDiscord />
+    </a>
   </div>
 
   <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#bbb" }}>
