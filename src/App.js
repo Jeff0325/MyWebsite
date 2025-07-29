@@ -15,13 +15,13 @@ import { FaGithub, FaLinkedin, FaInstagram, FaDiscord } from 'react-icons/fa';
 function App() {
     const items = [
     {
-      image: "/images/cpms.png",
+      image: "/images/Cpms.png",
       title: "Curfew E-Pass MS",
       subtitle: "Digital Curfew Passes",
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
       gradient: "linear-gradient(145deg, #3B82F6, #000)",
-      url: ""
+      url: "https://cpms.infy.uk"
     },
     {
       image: "/images/moviety.png",
@@ -30,7 +30,7 @@ function App() {
       handle: "@JeffGermino",
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10B981, #000)",
-      url: ""
+      url: "https://jeff0325.github.io/Moviety/"
     },
         {
       image: "/images/Qr.png",
@@ -39,7 +39,7 @@ function App() {
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
       gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
-      url: ""
+      url: "https://jeff0325.github.io/WifiQrGenerator/"
     }
   ];
 const galleryItems = [
