@@ -40,6 +40,15 @@ function App() {
       borderColor: "#3B82F6",
       gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
       url: "https://jeff0325.github.io/WifiQrGenerator/"
+    },
+            {
+      image: "/images/Qr.png",
+      title: "Wifi QR Generator",
+      subtitle: "Genrate Wifi Qr ",
+      handle: "@JeffGermino",
+      borderColor: "#3B82F6",
+      gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
+      url: "https://jeff0325.github.io/WifiQrGenerator/"
     }
   ];
 const galleryItems = [
@@ -283,6 +292,7 @@ const galleryItems = [
               performance, and implemented UI/UX improvements.
             </p>
           </Spotlight>
+          
         </div>
       </section>
       
