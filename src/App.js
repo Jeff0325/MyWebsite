@@ -42,13 +42,13 @@ function App() {
       url: "https://jeff0325.github.io/WifiQrGenerator/"
     },
             {
-      image: "/images/Qr.png",
-      title: "Wifi QR Generator",
-      subtitle: "Genrate Wifi Qr ",
+      image: "/images/Ai.png",
+      title: "ALex AI",
+      subtitle: "Ai Assistant",
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
       gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
-      url: "https://jeff0325.github.io/WifiQrGenerator/"
+      url: "https://github.com/Jeff0325/MyWebsite.git"
     }
   ];
 const galleryItems = [
