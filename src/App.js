@@ -43,7 +43,7 @@ function App() {
     },
             {
       image: "/images/Ai.png",
-      title: "ALex AI",
+      title: "Alex AI",
       subtitle: "Ai Assistant",
       handle: "@JeffGermino",
       borderColor: "#3B82F6",
