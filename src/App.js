@@ -37,7 +37,7 @@ function App() {
       title: "Wifi QR Generator",
       subtitle: "Genrate Wifi Qr ",
       handle: "@JeffGermino",
-      borderColor: "#3B82F6",
+      borderColor: "#f63b3bff",
       gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
       url: "https://jeff0325.github.io/WifiQrGenerator/"
     },
