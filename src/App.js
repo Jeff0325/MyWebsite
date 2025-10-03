@@ -46,8 +46,8 @@ function App() {
       title: "Alex AI",
       subtitle: "Ai Assistant",
       handle: "@JeffGermino",
-      borderColor: "#3B82F6",
-      gradient: "linear-gradient(180deg,rgb(246, 59, 59), #000)",
+      borderColor: "#f6f03bff",
+      gradient: "linear-gradient(180deg,rgba(224, 246, 59, 1), #000)",
       url: "https://github.com/Jeff0325/MyWebsite.git"
     }
   ];
