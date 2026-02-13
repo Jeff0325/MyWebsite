@@ -172,11 +172,11 @@ const galleryItems = [
         >
           <div><strong>Email:</strong> jeffersongermino0325@gmail.com</div>
           <div><strong>Location:</strong> Mandaluyong, Philippines</div>
-          <div><strong>Age:</strong> 24</div>
+          <div><strong>Age:</strong> 25</div>
           <div><strong>Nationality:</strong> Filipino</div>
           <div><strong>Education:</strong> Holy Cross College</div>
           <div><strong>Degree:</strong> BS in Computer Science</div>
-          <div><strong>Experience:</strong> 2+ Years</div>
+          <div><strong>Experience:</strong> 3+ Years</div>
           <div><strong>Projects:</strong> 5+ Completed</div>
           <div><strong>Seminars:</strong> 10+ Attended</div>
         </div>
