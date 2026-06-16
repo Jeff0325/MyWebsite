@@ -43,6 +43,15 @@ function App() {
     },
             {
       image: "/images/Ai.png",
+      title: "Telegram + Gmail + AI CUstomer Agent",
+      subtitle: "Customer Support Aumation",
+      handle: "@JeffGermino",
+      borderColor: "rgb(246, 59, 212)",
+      gradient: "linear-gradient(180deg,rgb(243, 102, 203), #000)",
+      url: "https://github.com/Jeff0325/MyWebsite.git"
+    },
+                {
+      image: "/images/Ai.png",
       title: "Alex AI",
       subtitle: "Ai Assistant",
       handle: "@JeffGermino",
@@ -63,8 +72,11 @@ const galleryItems = [
   { image: "/images/bb.jpg", text: "Bit Bucket" },
   { image: "/images/mysql.png", text: "MySQL" },
   { image: "/images/mssql.png", text: "MsSQL" },
+  { image: "/images/n8n.png", text: "N8N" },
+  { image: "/images/docker.png", text: "Docker" },
   { image: "/images/psp.png", text: "Photoshop" },
   { image: "/images/figma.png", text: "Figma" },
+  
 
  ];
   return (
@@ -89,7 +101,7 @@ const galleryItems = [
            <Profile
              name="Jefferson Germino"
              title="Web Developer"
-             handle="germinochon"
+             handle="jsongermino"
              status="Online"
              contactText="Contact Me"
              avatarUrl={avatar}
@@ -315,7 +327,7 @@ const galleryItems = [
       
         {/* Decrypted Email */}
         <EncryptedText
-          text="jeffersongermino0325@gmail.com"
+          text="jsongermino@gmail.com"
           animateOn="view"
           speed={60}
           maxIterations={30}
