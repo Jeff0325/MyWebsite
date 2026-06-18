@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./components/Nav";
 import CircularGallery from "./components/CircularGallery";
-import Lanyard from "./components/Lanyard";
-import Hyperspeed from './components/Hyperspeed';
-import { hyperspeedPresets } from './components/hyperspeedPresets';
+//import Lanyard from "./components/Lanyard";
+//import Hyperspeed from './components/Hyperspeed';
+//import { hyperspeedPresets } from './components/hyperspeedPresets';
 import Aurora from './components/AuroraBackground';
 import Profile from './components/Profile';
 import avatar from './assets/download.png';
