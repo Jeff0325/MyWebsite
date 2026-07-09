@@ -9,9 +9,9 @@ import Aurora from './components/AuroraBackground';
 import Profile from './components/Profile';
 import avatar from './assets/download.png';
 import EncryptedText from './components/EncryptedText';
-import ChromaGrid from './components/ChromaGrid';
-import Spotlight from './components/Spotlight';
-import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, FaCode, FaRobot, FaCheckCircle, FaArrowRight, FaCalendarAlt, FaMapPin, FaBriefcase } from 'react-icons/fa';
+//import ChromaGrid from './components/ChromaGrid';
+//import Spotlight from './components/Spotlight';
+import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, FaCode, FaCheckCircle, FaArrowRight, FaCalendarAlt, FaMapPin, FaBriefcase } from 'react-icons/fa';
 
 const ProjectCard = ({ item, index }) => (
   <motion.article
@@ -106,102 +106,6 @@ const ExperienceCard = ({ item, index }) => (
 );
 
 function App() {
-  const webDevelopmentExperiences = [
-    {
-      id: "jyosna",
-      title: "Web Developer & Cloud Engineer",
-      company: "Jyosna Inc.",
-      employmentType: "Full-time",
-      duration: "2022 — Present",
-      location: "Pasig, Philippines",
-      summary:
-        "Built and maintained business web applications while supporting cloud infrastructure, API integrations, and UX-focused feature delivery.",
-      technologies: ["C#", ".NET", "ASP.NET", "MS SQL", "Azure", "REST APIs", "Figma"],
-      bullets: [
-        "Developed and maintained web applications using ASP.NET Web Forms and C#.",
-        "Designed SQL Server databases, stored procedures, and performance-optimized queries.",
-        "Integrated third-party services and REST APIs into business-critical workflows.",
-        "Managed Azure infrastructure including virtual machines, storage, networking, and load balancing.",
-        "Delivered polished UI/UX improvements with Figma, Photoshop, and Canva.",
-        "Improved reliability by monitoring performance and resolving production issues.",
-      ],
-      achievements: ["Cloud systems deployed", "APIs integrated", "Databases optimized", "Features shipped"],
-    },
-    {
-      id: "holy-cross",
-      title: "IT Support Intern",
-      company: "Holy Cross College",
-      employmentType: "Internship",
-      duration: "2022",
-      location: "Nueva Ecija, Philippines",
-      summary:
-        "Supported day-to-day campus systems and helped maintain reliable technical operations with a strong focus on solving practical issues.",
-      technologies: ["Hardware Support", "Software Support", "Databases", "Troubleshooting"],
-      bullets: [
-        "Provided end-user support for software and hardware setup.",
-        "Resolved technical issues to keep academic operations running smoothly.",
-        "Maintained and monitored databases with emphasis on integrity and performance.",
-        "Performed routine system upkeep to reduce downtime and improve reliability.",
-        "Collaborated with staff to understand operational needs and provide practical solutions.",
-      ],
-      achievements: ["System uptime improved", "Issues resolved quickly", "Maintenance routines strengthened", "Support quality improved"],
-    },
-  ];
-
-  const automationExperiences = [
-    {
-      id: "ai-email",
-      title: "AI Email Classifier",
-      company: "Automation Project",
-      employmentType: "Automation",
-      duration: "2024",
-      location: "Remote",
-      summary:
-        "Designed an AI-driven Gmail workflow that classifies incoming emails, summarizes messages, and routes them with context-aware automation.",
-      technologies: ["n8n", "OpenAI", "Gmail API", "Webhooks", "JSON", "HTTP APIs"],
-      features: [
-        "Automatically classified email by intent, urgency, and category.",
-        "Used AI summaries to help prioritize incoming messages.",
-        "Created automated replies and routing rules for support and sales.",
-      ],
-      impact: ["Reduced manual triage time", "Improved response consistency", "Streamlined inbox operations"],
-    },
-    {
-      id: "lead-management",
-      title: "Lead Management Automation",
-      company: "Automation Project",
-      employmentType: "Automation",
-      duration: "2023",
-      location: "Remote",
-      summary:
-        "Built a lead capture and notification workflow that connected forms, messaging, and CRM updates into a seamless process.",
-      technologies: ["Make.com", "Webhooks", "HTTP APIs", "JSON", "Gmail API", "Workflow Automation"],
-      features: [
-        "Captured new leads from web forms and routed them instantly.",
-        "Sent notification emails and updates to the right team members.",
-        "Connected multiple systems so CRM updates happened automatically.",
-      ],
-      impact: ["Accelerated lead response", "Improved data accuracy", "Connected fragmented tools"],
-    },
-    {
-      id: "customer-support",
-      title: "Customer Support Automation",
-      company: "Automation Project",
-      employmentType: "Automation",
-      duration: "2023",
-      location: "Remote",
-      summary:
-        "Created an AI-assisted support workflow that routed tickets, generated replies, and orchestrated follow-ups with minimal manual effort.",
-      technologies: ["n8n", "Ollama", "OpenAI", "AI Agents", "Workflow Automation", "HTTP APIs"],
-      features: [
-        "Auto-routed support requests to the right queue.",
-        "Generated contextual replies for common inquiries.",
-        "Orchestrated follow-ups and escalations based on ticket content.",
-      ],
-      impact: ["Reduced ticket handling time", "Improved consistency", "Increased support capacity"],
-    },
-  ];
-
   const experienceStyles = `
     .experience-section {
       padding: 4rem 1.25rem;
