@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./ChromaGrid.css";
 
@@ -17,6 +17,7 @@ export const ChromaGrid = ({
   const setX = useRef(null);
   const setY = useRef(null);
   const pos = useRef({ x: 0, y: 0 });
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const demo = [
     {
@@ -79,10 +80,8 @@ export const ChromaGrid = ({
     });
   };
 
-  const handleCardClick = (url) => {
-    if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
+  const handleCardClick = (item) => {
+    setSelectedItem(item);
   };
 
   const handleCardMove = (e) => {
@@ -113,15 +112,18 @@ export const ChromaGrid = ({
           key={i}
           className="chroma-card"
           onMouseMove={handleCardMove}
-          onClick={() => handleCardClick(c.url)}
+          onClick={() => handleCardClick(c)}
           style={
             {
               "--card-border": c.borderColor || "transparent",
               "--card-gradient": c.gradient,
-              cursor: c.url ? "pointer" : "default",
+              cursor: "pointer",
             }
           }
         >
+          <div className="chroma-card-top">
+            <span className="chroma-card-badge">Featured Project</span>
+          </div>
           <div className="chroma-img-wrapper">
             <img src={c.image} alt={c.title} loading="lazy" />
           </div>
@@ -135,6 +137,38 @@ export const ChromaGrid = ({
       ))}
       <div className="chroma-overlay" />
       <div ref={fadeRef} className="chroma-fade" />
+
+      {selectedItem && (
+        <div className="chroma-modal-backdrop" onClick={() => setSelectedItem(null)}>
+          <div className="chroma-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="chroma-modal-close" onClick={() => setSelectedItem(null)} aria-label="Close project details">
+              ×
+            </button>
+            <div className="chroma-modal-content">
+              <div className="chroma-modal-media">
+                <img src={selectedItem.image} alt={selectedItem.title} />
+              </div>
+              <div className="chroma-modal-info">
+                <h3>{selectedItem.title}</h3>
+                <p className="chroma-modal-subtitle">{selectedItem.subtitle}</p>
+                <p className="chroma-modal-description">
+                  {selectedItem.description || "This project highlights my work in building practical digital solutions with a strong focus on usability, performance, and modern design."}
+                </p>
+                <div className="chroma-modal-features">
+                  {(selectedItem.features || ["Responsive interface", "Modern UI", "Functional workflow"]).map((feature) => (
+                    <span key={feature}>{feature}</span>
+                  ))}
+                </div>
+                {selectedItem.url && selectedItem.url !== "#" && (
+                  <a href={selectedItem.url} target="_blank" rel="noreferrer" className="chroma-modal-link">
+                    View Project
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

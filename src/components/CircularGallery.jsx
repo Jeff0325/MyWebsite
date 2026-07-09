@@ -24,6 +24,10 @@ function autoBind(instance) {
   });
 }
 
+export function getAutoScrollDelta({ isInteracting, scrollSpeed, autoScrollMultiplier = 0.01 }) {
+  return isInteracting ? 0 : scrollSpeed * autoScrollMultiplier;
+}
+
 function createTextTexture(gl, text, font = "bold 30px monospace", color = "black") {
   const canvas = document.createElement("canvas");
   const context = canvas.getContext("2d");
@@ -295,6 +299,7 @@ class App {
     this.container = container;
     this.scrollSpeed = scrollSpeed;
     this.scroll = { ease: scrollEase, current: 0, target: 0, last: 0 };
+    this.isDown = false;
     this.onCheckDebounce = debounce(this.onCheck, 200);
     this.createRenderer();
     this.createCamera();
@@ -395,6 +400,15 @@ class App {
     }
   }
   update() {
+    const autoScrollDelta = getAutoScrollDelta({
+      isInteracting: this.isDown,
+      scrollSpeed: this.scrollSpeed,
+    });
+
+    if (!this.isDown) {
+      this.scroll.target += autoScrollDelta;
+    }
+
     this.scroll.current = lerp(this.scroll.current, this.scroll.target, this.scroll.ease);
     const direction = this.scroll.current > this.scroll.last ? "right" : "left";
     if (this.medias) {
